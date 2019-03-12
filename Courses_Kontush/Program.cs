@@ -13,14 +13,11 @@ namespace Courses_Kontush
             Console.WriteLine(DateTime.Now.TimeOfDay);
             TimeSpan time = DateTime.Now.TimeOfDay;
 
-            int timeConverted = time.Hours;
-
-            if (timeConverted >= 9 && timeConverted <= 12)
+            if (time.Hours >= 9 && time.Hours <= 12)
             {
                 Console.WriteLine("Good morning guys");
             }
-
-            else if ((timeConverted >= 12 && timeConverted <= 15))
+            else if ((time.Hours >= 12 && time.Hours <= 15))
             {
                 Console.WriteLine("Good day, guys");
             }
